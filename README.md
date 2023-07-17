@@ -1,6 +1,7 @@
 ## PDSND_Explore_US_Bikeshare_Data
 Udacity Data Analyst Nanodegree - Project 2
 
+
 ### Date created
 Created date : 16-Jul-2023
 
@@ -52,5 +53,5 @@ The Chicago and New York City files also have the following two columns:
 - Birth Year
 
 ### Script run instructions
-Run the command : python bikeshare.py
-Choose from the given options interactively.
+- Run the command : python bikeshare.py
+- Choose from the given options interactively.

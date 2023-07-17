@@ -1,3 +1,4 @@
+#Import libraries
 import time
 import pandas as pd
 import numpy as np
@@ -11,6 +12,7 @@ cities = ['chicago', 'new york', 'washington']
 months = ['january','february','march','april','may','june','all']
 days_of_week = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday','all']
 
+# Get the choice of the user and validate the input. If the input is incorrect, ask the user again to input a value from the given choices.
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
