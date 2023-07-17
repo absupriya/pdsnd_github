@@ -51,6 +51,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
+# Load data as per the user input
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -80,6 +81,7 @@ def load_data(city, month, day):
 
     return df
 
+# Calculate and display the statistics on the most frequent times of travel
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -106,6 +108,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+# Calculate and display statistics on the most popular stations and trip.
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -128,6 +131,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+# Calculate and display statistics on the total and average trip duration
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -147,6 +151,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+# Calculate and display statistics on the users of the bikeshare.
 def user_stats(df, city):
     """Displays statistics on bikeshare users."""
 
@@ -180,6 +185,7 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+
 # Ask user if they want to see any number of lines of raw data (instead of only 5 lines as asked in the rubric)
 # Below code will prompt the user to enter the number of lines of raw data to be displayed. 
 # If the user enters 0 or doesn't enter any value, 5 rows will be displayed by default.
@@ -207,6 +213,8 @@ def request_raw_data(df):
         else:
             break
 
+# Main program to interact with users and get their choice of city, month and day of week; 
+# load data according to the chosen city and lastly invoke the functions to calculate the statistics.
 def main():
     while True:
         city, month, day = get_filters()
