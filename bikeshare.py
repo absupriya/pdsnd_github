@@ -3,6 +3,7 @@ import time
 import pandas as pd
 import numpy as np
 
+# Initialize a dictionary with city name and city datafile name
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -159,8 +160,8 @@ def user_stats(df, city):
     start_time = time.time()
 
     # TO DO: Display counts of user types
-    count_user_types = df['User Type'].value_counts()
-    print('Number of user types: \n', count_user_types)
+    count_of_user_types = df['User Type'].value_counts()
+    print('Number of user types: \n', count_of_user_types)
 
     # TO DO: Display counts of gender
     try:
